@@ -106,4 +106,4 @@ Scenario: Decimal value capping
  and I press "Multiply"
  And I type in "Number 2"
  And I press "equals"
- Then I see the "Multiplied Number" as the result upto two decimal place
+ Then I see the "Multiplied number" as the result upto two decimal place
