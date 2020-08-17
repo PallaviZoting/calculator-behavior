@@ -14,7 +14,7 @@ Scenario: Addition of two negative numbers
  And I press "plus"
  And I type in "neagtive number"
  And I press "equals"
- Then I see the "added number" as the result 
+ Then I see the "added number" as the result with minus sign 
 
 Scenario: Addition of fractions
  Given The calculator is turned on and I am able to enter the fraction number
@@ -65,7 +65,7 @@ Scenario: Adding numbers where the result goes out of range
  And I press "plus"
  And I type in "Large number 2"
  And I press "equals"
- Then I see the "range exceed" as the result 
+ Then I see the "Error" as the result 
 
 Scenario: 6+* is provided as input
  Given The calculator is turned on
