@@ -14,7 +14,7 @@ Scenario: Subtraction of two negative numbers
  And I press "minus"
  And I type in "negative number"
  And I press "equals"
- Then I second number is added to first negative number and I see
+ Then add second number to first negative number and I see
  the "subtracted number" as the result with appropriate sign
 
 Scenario: Subtraction of fractions
