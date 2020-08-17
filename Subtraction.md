@@ -38,7 +38,7 @@ Scenario: Subtraction of positive and negative numbers
 Scenario: Subtraction of decimals
  Given The calculator is on and able to enter decimal number
  When I type in "decimal number 1"
- And I press "minuss"
+ And I press "minus"
  And I type in "decimal number 2"
  And I press "equals"
  Then I see the "Subtracted number" as the result in decimal form
