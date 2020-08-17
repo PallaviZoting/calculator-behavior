@@ -82,7 +82,7 @@ Scenario: Range of operand exceeds allowed limit
  And I press "equals"
  Then I see the "Range Error" as the result
 
-Scenario: Pressing "multiply button" multiple times
+Scenario: Pressing "multiply button" many times
  Given The Calculator is on
  When I Typed in "Number 1"
  and I press "Multiply"
