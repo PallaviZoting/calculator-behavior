@@ -12,7 +12,7 @@ Scenario: Addition of two negative numbers
  Given The calculator is turned on
  When I type in "negative number"
  And I press "plus"
- And I type in "neagtive number"
+ And I type in "negative number"
  And I press "equals"
  Then I see the "added number" as the result
 
@@ -24,7 +24,7 @@ Scenario: Addition of fractions
  And I press "equals"
  Then I see the "added number" as the result in fraction form
 
-Scenario: Addition of +ve and -ve number
+Scenario: Addition of positive and negative numbers
  Given The calculator is turned on
  When I type in "positive number"
  And I press "plus"
@@ -45,7 +45,7 @@ Scenario: Typing operator more than once
  When I type in "number 1"
  And I press "plus"
  And I press "other operator"
- And I type in "1number 2"
+ And I type in "number 2"
  And I press "equals"
  Then I see the "Error" as the result
 
