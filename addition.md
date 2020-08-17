@@ -17,12 +17,12 @@ Scenario: Addition of two negative numbers
  Then I see the "added number" as the result 
 
 Scenario: Addition of fractions
- Given The calculator is turned on 
+ Given The calculator is turned on and able to enter fraction 
  When I type in "fraction number 1"
  And I press "plus"
  And I type in "fraction number 2"
  And I press "equals"
- Then I see the "added number" as the result 
+ Then I see the "added fraction number" as the result 
 
 Scenario: Addition of +ve and -ve number
  Given The calculator is turned on
@@ -33,12 +33,12 @@ Scenario: Addition of +ve and -ve number
  Then I see the "added number" as the result
 
 Scenario: Addition of decimals
- Given The calculator is turned on 
+ Given The calculator is turned on and able to enter decimal number
  When I type in "decimal number 1"
  And I press "plus"
  And I type in "decimal number 2"
  And I press "equals"
- Then I see the "added number" as the result 
+ Then I see the "added decimal number" as the result 
 
 Scenario: Typing operator more than once
  Given The calculator is turned on
@@ -65,7 +65,7 @@ Scenario: Adding numbers where the result goes out of range
  And I press "plus"
  And I type in "Large number 2"
  And I press "equals"
- Then I see the "error" as the result 
+ Then I see the "Out of range" as the result 
 
 Scenario: 6+* is provided as input
  Given The calculator is turned on
@@ -74,7 +74,7 @@ Scenario: 6+* is provided as input
  And I press "multiply"
  And I type in "positive number"
  And I press "equals"
- Then I see the "multiply" as the result
+ Then I see the "Error" as the result
 
 Scenario: Identify operation
  Given The calculator is turned on
