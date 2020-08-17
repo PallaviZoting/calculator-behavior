@@ -14,15 +14,15 @@ Scenario: Addition of two negative numbers
  And I press "plus"
  And I type in "neagtive number"
  And I press "equals"
- Then I see the "added number with negative sign" as the result 
+ Then I see the "added number with - sign" as the result 
 
 Scenario: Addition of fractions
- Given The calculator is turned on and I am able to enter fraction numbers
+ Given The calculator is turned on and I am able to enter fraction 
  When I type in "fraction number 1"
  And I press "plus"
  And I type in "fraction number 2"
  And I press "equals"
- Then I see the "added number" as the result in the form of fraction
+ Then I see the "added fraction number" as the result 
 
 Scenario: Addition of +ve and -ve number
  Given The calculator is turned on
@@ -38,7 +38,7 @@ Scenario: Addition of decimals
  And I press "plus"
  And I type in "decimal number 2"
  And I press "equals"
- Then I see the "added number" as the result in the form of decimal
+ Then I see the "added decimal number" as the result 
 
 Scenario: Typing operator more than once
  Given The calculator is turned on
@@ -49,7 +49,7 @@ Scenario: Typing operator more than once
  And I press "equals"
  Then I see the "multiplication of numbers" as the result
 
-Scenario: Addition of more than 2 numbers
+Scenario: Addition of more than two numbers
  Given The calculator is turned on
  When I type in "number 1"
  And I press "plus"
