@@ -53,7 +53,7 @@ Scenario: Recurring decimal case
  And I press "equals"
  Then I see the "Divided number" as the result rounded off to two decimal place
 
-Scenario: Multiple times "/" is pressed
+Scenario: Division operator is press often
  Given The calculator is on
  When I type in "number 1"
  And I press "Divide"
@@ -62,7 +62,7 @@ Scenario: Multiple times "/" is pressed
  And I press "equals"
  Then I see the "Divided Number" as the result
 
-Scenario: Interleaving of multiple operators
+Scenario: Interleaving of different operators
  Given The calculator is on
  When I type in "number 1"
  And I press "Divide"
@@ -78,7 +78,7 @@ Scenario: When operand 2 is not present
  And I press "equals"
  Then I see the "one" as the result
 
-Scenario: Division of multiple numbers
+Scenario: Division of more than two numbers
  Given The calculator is on
  When I type in "number 1"
  And I press "Divide"
