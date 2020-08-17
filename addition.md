@@ -14,7 +14,7 @@ Scenario: Addition of two negative numbers
  And I press "plus"
  And I type in "neagtive number"
  And I press "equals"
- Then I see the "added number" as the result with minus sign 
+ Then I see the "added number" as the result
 
 Scenario: Addition of fractions
  Given The calculator is turned on and I am able to enter the fraction number
