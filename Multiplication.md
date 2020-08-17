@@ -22,7 +22,7 @@ Scenario: Multiplication by 1
  and I press "Multiply"
  And I type in "One"
  And I press "equals"
- Then I see the "Nymber" as the result
+ Then I see the "Number" as the result
 
 Scenario: Decimal value multiplication
  Given The Calculator is on
@@ -63,7 +63,7 @@ Scenario: Decimal & integer multiplication
  And I type in "Integer Number"
  And I press "equals"
  Then I see the "Multiplied Decimal Number" as the result
- 
+
 Scenario: More than two numbers multiplication
  Given The Calculator is on
  When I Typed in "Number 1"
