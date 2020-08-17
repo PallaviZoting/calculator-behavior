@@ -65,7 +65,7 @@ Scenario: Adding numbers where the result goes out of range
  And I press "plus"
  And I type in "Large number 2"
  And I press "equals"
- Then I see the "Range Error" as the result 
+ Then I see the "Range Error" as the result
 
 Scenario: 6+* is provided as input
  Given The calculator is turned on
