@@ -47,7 +47,7 @@ Scenario: Division when both operands are 0
 
 Scenario: Recurring decimal case
  Given The calculator is on
- When I type in "recurrring number 1"
+ When I type in "recurring number 1"
  And I press "Divide"
  And I type in "recurring number 2"
  And I press "equals"
@@ -78,7 +78,7 @@ Scenario: When operand 2 is not present
  And I press "equals"
  Then I see the "one" as the result
 
-Scenario: Division of multiple numbers (eg: 4/5/6/7)
+Scenario: Division of multiple numbers
  Given The calculator is on
  When I type in "number 1"
  And I press "Divide"
