@@ -33,7 +33,7 @@ Scenario: Addition of +ve and -ve number
  Then I see the "added number" as the result
 
 Scenario: Addition of decimals
- Given The calculator is turned on and I am able to enter decimal numbers
+ Given The calculator is turned on 
  When I type in "decimal number 1"
  And I press "plus"
  And I type in "decimal number 2"
@@ -44,10 +44,10 @@ Scenario: Typing operator more than once
  Given The calculator is turned on
  When I type in "number 1"
  And I press "plus"
- And I press "other operator/multiply"
+ And I press "other operator"
  And I type in "1number 2"
  And I press "equals"
- Then I see the "multiplication of numbers" as the result
+ Then I see the "Error" as the result
 
 Scenario: Addition of more than two numbers
  Given The calculator is turned on
@@ -65,9 +65,9 @@ Scenario: Adding numbers where the result goes out of range
  And I press "plus"
  And I type in "Large number 2"
  And I press "equals"
- Then I see the "added number" as the result only till range limit
+ Then I see the "error" as the result 
 
-Scenario: 6+* is provided as input?
+Scenario: 6+* is provided as input
  Given The calculator is turned on
  When I type in "positive number"
  And I press "plus"
