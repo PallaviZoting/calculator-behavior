@@ -22,7 +22,7 @@ Scenario: Sign rules for operands
  And I press "Divide"
  And I type in "negative number"
  And I press "equals"
- Then I see the "Divided negative number" as the result 
+ Then I see the "Divided negative number" as the result
 
 Scenario: Division isn't symmetric
  Given The calculator is on
@@ -77,7 +77,7 @@ Scenario: When operand 2 is not present
  And I press "Divide"
  And I press "equals"
  Then I see the "one" as the result
- 
+
 Scenario: Division of multiple numbers (eg: 4/5/6/7)
  Given The calculator is on
  When I type in "number 1"
